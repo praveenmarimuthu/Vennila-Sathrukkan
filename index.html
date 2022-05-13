@@ -656,7 +656,9 @@ This blog aims to give you suggestions on how you can make your stay a memorable
         <div class="w3-content"style="max-width: 700px;">
           <h1 class="w3-center w3-padding-64">
             <span class="w3-tag w3-wide">The Wedding</span>
+            
           </h1>
+          <span class="w3-center w3-padding-64" id="finished">
           <p class ="timer" id="timer"></p>
           <p>
             We hope the blog makes your stay at Madurai better. But, let’s not forget the event in hand. We invite you, wholeheartedly, to the wedding
@@ -677,6 +679,7 @@ This blog aims to give you suggestions on how you can make your stay a memorable
           <p class="w3-text-grey"><a class="link-underline" href="static/Vennila-Sathrukkan.pdf"
             >Download e-invite!
           </a></p>
+          </span>
         </div>
       </div>
       <!-- End page content -->
@@ -748,7 +751,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "WE ARE MARRIED ALREADY! Find the easteregg";
+    document.getElementById("finished").innerHTML = "<h1>WE ARE MARRIED ALREADY! <br>Find the easteregg!!</h1><br><br><br>";
   }
 }, 1000);
 </script>
